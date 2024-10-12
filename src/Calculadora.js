@@ -23,6 +23,7 @@ class Calculadora {
       if (typeof numero!== 'number'){
         throw new TypeError("O argumento deve ser um número válido")
       }
+      this.#resultado = this.#resultado + numero
     }
   
     divisao(numero) {
